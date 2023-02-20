@@ -440,8 +440,8 @@ address {
   padding: 16px 32px;
 }
 
-.icons:hover,
-.icons:focus {
+.icons-display:hover,
+.icons-display:focus {
   fill: var(--background-button-color, #2196f3);
 }
 
@@ -450,11 +450,6 @@ address {
   justify-content: center;
   align-content: center;
   gap: 30px;
-}
-
-.clients:hover,
-.clients:focus {
-  fill: #2196f3;
 }
 
 .join-us {
