@@ -123,7 +123,7 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(0, 0, 0, 0.25)
     ),
-    url(background-image.jpg);
+    url(../images/background-image.jpg);
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -459,31 +459,39 @@ address {
   gap: 30px;
 }
 
+.media {
+  display: flex;
+}
+
 .join-us {
   color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   font-family: var(--main-font "Roboto", sans-serif);
-}
-
-.media {
-  display: flex;
 }
 
 .social {
   justify-content: center;
   display: inline;
+
   margin-left: 70px;
 }
 
 .media-list {
   display: flex;
-  margin: 20px 0;
   gap: 10px;
 }
 
-.media {
-  corner-radius: 0;
+.media-item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--secondary-text-color);
+}
+
+.media-item:focus,
+.media-item:hover {
+  background-color: var(--secondary-font-color);
 }
 
 .client-icons {
