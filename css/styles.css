@@ -449,7 +449,7 @@ address {
 }
 
 .icons {
-  color: #afb1b8;
+  fill: #afb1b8;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -513,7 +513,7 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #afb1b8;
+  fill: #afb1b8;
 }
 
 .link-svg:hover,
@@ -530,7 +530,7 @@ address {
   height: 92px;
   border-radius: 4px;
   border: 1px solid currentColor;
-  color: currentColor;
+  color: #afb1b8;
 }
 
 .client-links:hover,
