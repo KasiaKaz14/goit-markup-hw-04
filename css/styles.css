@@ -123,7 +123,9 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(0, 0, 0, 0.25)
     ),
-    url(background-image.jpg);
+    url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -235,7 +237,7 @@ body {
 }
 
 .image-infos {
-  padding: 30px 0px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
@@ -316,11 +318,6 @@ body {
   cursor: pointer;
 }
 
-.secondary-item:hover,
-.secondary-item:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
 .text {
   color: var(--main-text-color, #212121);
 }
@@ -328,6 +325,15 @@ body {
 .text:hover,
 .text:focus {
   color: var(--secondary-text-color, #ffffff);
+}
+
+.secondary-link {
+  display: block;
+}
+
+.secondary-link:hover,
+.secondary-link:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .secondary-description {
@@ -443,7 +449,7 @@ address {
 }
 
 .icons {
-  color: #afb1b8;
+  fill: #afb1b8;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -459,40 +465,45 @@ address {
   gap: 30px;
 }
 
+.media {
+  display: flex;
+  align-items: baseline;
+}
+
 .join-us {
   color: #ffffff;
   text-transform: uppercase;
-
-  font-family: var(--main-font "Roboto", sans-serif);
-}
-
-.media {
-  display: flex;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .social {
-  justify-content: center;
-  display: inline;
   margin-left: 70px;
 }
 
 .media-list {
   display: flex;
-  margin: 20px 0;
   gap: 10px;
 }
 
-.media {
-  corner-radius: 0;
+.media-item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--secondary-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.media-item:focus,
+.media-item:hover {
+  background-color: var(--secondary-font-color);
 }
 
 .client-icons {
-  fill: #afb1b8;
-}
-
-.client-icons:hover,
-.client-icons:focus {
-  fill: var(--secondary-font-color);
+  fill: currentColor;
 }
 
 .link-svg {
@@ -502,14 +513,13 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #afb1b8;
-  fill: var(--secondary-text-color);
+  fill: #afb1b8;
 }
 
 .link-svg:hover,
 .link-svg:focus {
-  fill: var(--secondary-font-color);
-  color: var(--secondary-text-color);
+  background-color: var(--secondary-font-color);
+  fill: var(--secondary-text-color);
 }
 
 .client-links {
